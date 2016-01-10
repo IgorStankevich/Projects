@@ -1,0 +1,11 @@
+D:\Projects\Library\Presenter\bin\Debug\Library.Presenter.dll
+D:\Projects\Library\Presenter\bin\Debug\Library.Presenter.pdb
+D:\Projects\Library\Presenter\bin\Debug\Library.Entities.dll
+D:\Projects\Library\Presenter\bin\Debug\Library.View.dll
+D:\Projects\Library\Presenter\bin\Debug\Library.Entities.pdb
+D:\Projects\Library\Presenter\bin\Debug\Library.View.pdb
+D:\Projects\Library\Presenter\obj\Debug\Library.Presenters.csprojResolveAssemblyReference.cache
+D:\Projects\Library\Presenter\obj\Debug\Library.Presenter.dll
+D:\Projects\Library\Presenter\obj\Debug\Library.Presenter.pdb
+D:\Projects\Library\Presenter\bin\Debug\Library.Models.dll
+D:\Projects\Library\Presenter\bin\Debug\Library.Models.pdb

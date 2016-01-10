@@ -1,0 +1,7 @@
+D:\projects\Library\Library.Validators\obj\Debug\Library.Validators.csprojResolveAssemblyReference.cache
+D:\projects\Library\Library.Validators\bin\Debug\Library.Validators.dll
+D:\projects\Library\Library.Validators\bin\Debug\Library.Validators.pdb
+D:\projects\Library\Library.Validators\bin\Debug\Library.View.dll
+D:\projects\Library\Library.Validators\bin\Debug\Library.View.pdb
+D:\projects\Library\Library.Validators\obj\Debug\Library.Validators.dll
+D:\projects\Library\Library.Validators\obj\Debug\Library.Validators.pdb

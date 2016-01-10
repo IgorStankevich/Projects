@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Book>
+    <ID>3bfe5b80-34e9-4141-901d-0f502cc6e9ff</ID>
+    <Author>1</Author>
+    <Name>1</Name>
+    <Publisher>1</Publisher>
+    <DatePublishing>1</DatePublishing>
+  </Book>
+  <Book>
+    <ID>854e6f54-56ac-4d67-ac45-9359ea5bf706</ID>
+    <Author>2</Author>
+    <Name>2</Name>
+    <Publisher>2</Publisher>
+    <DatePublishing>2</DatePublishing>
+  </Book>
+</ArrayOfBook>

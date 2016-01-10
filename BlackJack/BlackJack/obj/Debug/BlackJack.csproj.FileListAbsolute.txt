@@ -1,0 +1,48 @@
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\bin\Debug\BlackJack.exe
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\obj\Debug\BlackJack.exe
+c:\users\игорь\documents\visual studio 2012\Projects\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Игорь\Documents\BlackJack\BlackJack\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack - копия\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+D:\курсы\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe.config
+D:\курсы\BlackJack - копия\BlackJack\obj\Debug\BlackJack.exe
+D:\курсы\BlackJack - копия\BlackJack\obj\Debug\BlackJack.pdb
+D:\курсы\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
+D:\курсы\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
+D:\курсы\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe.config
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\stankevich\Downloads\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe.config
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.exe
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.pdb
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
+D:\C# Essential\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe.config
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.exe
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.pdb
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
+D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache

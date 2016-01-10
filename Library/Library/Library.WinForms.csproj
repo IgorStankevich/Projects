@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A99159BE-2347-49FC-B55D-4F795BA2EEDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library.WinForms</RootNamespace>
+    <AssemblyName>Library.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LibIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <Reference Include="FastMember, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.0.0.11\lib\net40\FastMember.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+=======
+>>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBookFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBookFrm.Designer.cs">
+      <DependentUpon>AddBookFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMagazineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMagazineFrm.Designer.cs">
+      <DependentUpon>AddMagazineFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibraryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryFrm.Designer.cs">
+      <DependentUpon>LibraryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
+    <Compile Include="UpdateBookFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBookFrm.Designer.cs">
+      <DependentUpon>UpdateBookFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMagazineFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMagazineFrm.Designer.cs">
+      <DependentUpon>UpdateMagazineFrm.cs</DependentUpon>
+    </Compile>
+=======
+>>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
+    <EmbeddedResource Include="AddBookFrm.resx">
+      <DependentUpon>AddBookFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMagazineFrm.resx">
+      <DependentUpon>AddMagazineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryFrm.resx">
+      <DependentUpon>LibraryFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+<<<<<<< HEAD
+    <EmbeddedResource Include="UpdateBookFrm.resx">
+      <DependentUpon>UpdateBookFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMagazineFrm.resx">
+      <DependentUpon>UpdateMagazineFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+=======
+>>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <ProjectReference Include="..\Library.Validators\Library.Validators.csproj">
+      <Project>{5028ed51-fe06-4cfa-8840-e92e28bf2c23}</Project>
+      <Name>Library.Validators</Name>
+    </ProjectReference>
+=======
+>>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
+    <ProjectReference Include="..\Presenter\Library.Presenters.csproj">
+      <Project>{96486767-bf7f-49d4-9364-31033abb2927}</Project>
+      <Name>Library.Presenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\View\Library.Views.csproj">
+      <Project>{3ababcc4-b90a-47db-8dcc-25371cb6242a}</Project>
+      <Name>Library.Views</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LibIcon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

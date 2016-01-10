@@ -1,0 +1,15 @@
+D:\Projects\Library\Library\obj\Debug\WinFormsLibrary.csprojResolveAssemblyReference.cache
+D:\Projects\Library\Library\obj\Debug\Library.AddBookFrm.resources
+D:\Projects\Library\Library\obj\Debug\Library.AddMagazineFrm.resources
+D:\Projects\Library\Library\obj\Debug\Library.BookFrm.resources
+D:\Projects\Library\Library\obj\Debug\Library.MagazineFrm.resources
+D:\Projects\Library\Library\obj\Debug\Library.MainFrm.resources
+D:\Projects\Library\Library\obj\Debug\Library.Properties.Resources.resources
+D:\Projects\Library\Library\obj\Debug\WinFormsLibrary.csproj.GenerateResource.Cache
+D:\Projects\Library\Library\bin\Debug\Library.exe.config
+D:\Projects\Library\Library\bin\Debug\Library.exe
+D:\Projects\Library\Library\bin\Debug\Library.pdb
+D:\Projects\Library\Library\bin\Debug\View.dll
+D:\Projects\Library\Library\bin\Debug\View.pdb
+D:\Projects\Library\Library\obj\Debug\Library.exe
+D:\Projects\Library\Library\obj\Debug\Library.pdb

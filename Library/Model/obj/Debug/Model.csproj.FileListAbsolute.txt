@@ -1,0 +1,7 @@
+D:\Projects\Library\Model\bin\Debug\Model.dll
+D:\Projects\Library\Model\bin\Debug\Model.pdb
+D:\Projects\Library\Model\bin\Debug\Entities.dll
+D:\Projects\Library\Model\bin\Debug\Entities.pdb
+D:\Projects\Library\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\Projects\Library\Model\obj\Debug\Model.dll
+D:\Projects\Library\Model\obj\Debug\Model.pdb

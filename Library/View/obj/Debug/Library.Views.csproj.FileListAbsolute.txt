@@ -1,0 +1,5 @@
+D:\Projects\Library\View\bin\Debug\Library.View.dll
+D:\Projects\Library\View\bin\Debug\Library.View.pdb
+D:\Projects\Library\View\obj\Debug\Library.Views.csprojResolveAssemblyReference.cache
+D:\Projects\Library\View\obj\Debug\Library.View.dll
+D:\Projects\Library\View\obj\Debug\Library.View.pdb
