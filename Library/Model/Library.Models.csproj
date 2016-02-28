@@ -32,11 +32,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-<<<<<<< HEAD
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />

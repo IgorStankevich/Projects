@@ -40,10 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Book.cs" />
-<<<<<<< HEAD
     <Compile Include="ILibraryItem.cs" />
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Compile Include="Magazine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

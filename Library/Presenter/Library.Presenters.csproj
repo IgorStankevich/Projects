@@ -32,10 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-<<<<<<< HEAD
     <Reference Include="System.Windows.Forms" />
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,18 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AddBookPresenter.cs" />
     <Compile Include="AddMagazinePresenter.cs" />
     <Compile Include="LibraryMapper.cs" />
     <Compile Include="MainPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpdateBookPresenter.cs" />
-=======
-    <Compile Include="AddBookFrmPresenter.cs" />
-    <Compile Include="BookFrmPresenter.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
+    <Compile Include="UpdateMagazinePresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Library.Entities.csproj">

@@ -45,12 +45,12 @@ namespace BlackJack.BusinessLogic
         public void RoundWinner()
         {
             var resultround = _resultServices.ResultRound();
-            if (resultround == Result.WinnerPlayer)
+            if (resultround == Result.PlayerWon)
             {
                 _player.PlayerMoney += ConsoleService.moneyinput;
                 ConsoleService.ShowRoundWinner(_player);
             }
-            else if (resultround == Result.WinnerComputer)
+            else if (resultround == Result.ComputerWon)
             {
                 _player.PlayerMoney -= ConsoleService.moneyinput;
                 ConsoleService.ShowRoundWinner(_computer);

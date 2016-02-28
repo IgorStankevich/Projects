@@ -66,6 +66,7 @@
             this.button2.TabIndex = 43;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -111,6 +112,7 @@
             this.okButton.TabIndex = 38;
             this.okButton.Text = "Save";
             this.okButton.UseVisualStyleBackColor = true;
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
             // datepublishingTxtBox
             // 

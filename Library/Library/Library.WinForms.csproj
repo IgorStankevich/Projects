@@ -35,15 +35,13 @@
     <ApplicationIcon>LibIcon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Reference Include="FastMember, Version=1.0.0.9, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FastMember.1.0.0.11\lib\net40\FastMember.dll</HintPath>
       <Private>True</Private>
     </Reference>
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -74,7 +72,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="UpdateBookFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,8 +84,6 @@
     <Compile Include="UpdateMagazineFrm.Designer.cs">
       <DependentUpon>UpdateMagazineFrm.cs</DependentUpon>
     </Compile>
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <EmbeddedResource Include="AddBookFrm.resx">
       <DependentUpon>AddBookFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,7 +103,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="UpdateBookFrm.resx">
       <DependentUpon>UpdateBookFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,8 +110,6 @@
       <DependentUpon>UpdateMagazineFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,13 +124,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ProjectReference Include="..\Library.Validators\Library.Validators.csproj">
       <Project>{5028ed51-fe06-4cfa-8840-e92e28bf2c23}</Project>
       <Name>Library.Validators</Name>
     </ProjectReference>
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <ProjectReference Include="..\Presenter\Library.Presenters.csproj">
       <Project>{96486767-bf7f-49d4-9364-31033abb2927}</Project>
       <Name>Library.Presenters</Name>

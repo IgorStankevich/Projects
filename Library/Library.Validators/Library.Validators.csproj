@@ -44,7 +44,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AddBookValidator.cs" />
     <Compile Include="AddMagazineValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,11 +54,6 @@
       <Name>Library.Views</Name>
     </ProjectReference>
   </ItemGroup>
-=======
-    <Compile Include="Class1.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -16,11 +16,7 @@ namespace Library.Presenter
         private BookModel _bookModel;
         public AddBookPresenter(IAddBookView viewAddBook)
         {
-<<<<<<< HEAD
             _viewAddBook = viewAddBook;
-=======
-            _viewAddBook = _viewAddBook;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             _bookModel = new BookModel();
         }
 
@@ -33,14 +29,6 @@ namespace Library.Presenter
             var book = new Book(author, name, publisher, datepublishing);
             _bookModel.AddBook(book);
         }
-<<<<<<< HEAD
 
-=======
-        //_bookModel.AddBook();
-        public void GetBooks(List<Book> books)
-        {
-            BookModel.GetBooksTable(books);
-        }
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     }
 }

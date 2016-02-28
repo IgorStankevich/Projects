@@ -10,7 +10,12 @@ namespace Library.Views
         GridViewItem ViewItem { get; set; }
         bool UpdateBook { get; set; }
         bool UpdateMagazine { get; set; }
-        string SearchingValue { get; set; }
+        string Author { get; set; }
+        string ID { get; set; }
+        string Name { get; set; }
+        string Publisher { get; set; }
+        int DatePublishing { get; set; }
+        int Periodicity { get; set; }
         void BindData();
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-<<<<<<< HEAD
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,37 +8,27 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-=======
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
 using Library.Entities;
 
 namespace Library.Models
 {
     public class MagazineModel
     {
-<<<<<<< HEAD
+        //TO DO Without static
         private static List<Magazine> _magazines = new List<Magazine>();
         private static Magazine _magazine = new Magazine();
         private XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Magazine>));
-        private string filepath = @"c:\Users\stankevich\Desktop\magazines.xml";
 
         public void AddMagazine(Magazine magazine)
         {
             _magazine = magazine;
             _magazines.Add(magazine);
-            using (StreamWriter stream = new StreamWriter(filepath))
-            {
-                xmlSerializer.Serialize(stream, _magazines);
-                stream.Close();
-            }
+            WriteToXml();
         }
 
         public void UpdateMagazine(Magazine magazine)
         {
-            var mag = _magazines.Where(x => x.ID == magazine.ID).First();
+            var mag = _magazines.Where(x => x.ID == magazine.ID).FirstOrDefault();
             if (mag != null)
             {
                 mag.Author = magazine.Author;
@@ -47,6 +36,8 @@ namespace Library.Models
                 mag.Publisher = magazine.Publisher;
                 mag.DatePublishing = magazine.DatePublishing;
                 mag.Periodicity = magazine.Periodicity;
+                WriteToXml();
+                ReadFromXml();
             }
         }
 
@@ -55,49 +46,36 @@ namespace Library.Models
             return _magazines.Last();
         }
 
-        public void DeleteMagazine()
+        public void DeleteMagazine(Magazine magazine)
         {
-            _magazines.Remove(_magazine);
+            var item = _magazines.SingleOrDefault(x => x.ID == magazine.ID);
+            if (item != null)
+            {
+                _magazines.Remove(item);
+            }
+            WriteToXml();
         }
 
         public List<Magazine> GetAllMagazines()
         {
-            if (File.Exists(filepath))
-            {
-                TextReader textReader = new StreamReader(filepath);
-                _magazines = (List<Magazine>)xmlSerializer.Deserialize(textReader);
-                textReader.Close();
-            }
-            else
-            {
-                XmlTextWriter writer = new XmlTextWriter(filepath, System.Text.Encoding.UTF8);
-                writer.Close();
-            }
+            ReadFromXml();
             return _magazines;
         }
-=======
-        public static List<Magazine> _magazines = new List<Magazine>();
-        public static Magazine _magazine = new Magazine();
 
-        public static void AddMagazine(Magazine magazine)
+        public void ReadFromXml()
         {
-            _magazines.Add(magazine);
+            TextReader textReader = new StreamReader("magazines.xml");
+            _magazines = (List<Magazine>)xmlSerializer.Deserialize(textReader);
+            textReader.Close();
         }
-        public static DataTable GetMagazinesTable(List<Magazine> magazines)
+
+        public void WriteToXml()
         {
-            DataTable dataTable = new DataTable("Magazines");
-            dataTable.Columns.Add("Name", typeof(string));
-            dataTable.Columns.Add("Author", typeof(string));
-            dataTable.Columns.Add("Publisher", typeof(string));
-            dataTable.Columns.Add("Date of Publishing", typeof(int));
-            dataTable.Columns.Add("Periodicity", typeof(int));
-            foreach (var magazine in magazines)
+            using (StreamWriter stream = new StreamWriter("magazines.xml"))
             {
-                dataTable.Rows.Add(magazine.Name, magazine.Author, magazine.Publisher, magazine.DatePublishing, magazine.Periodicity);
+                xmlSerializer.Serialize(stream, _magazines);
+                stream.Close();
             }
-            return dataTable;
         }
-
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     }
 }

@@ -15,44 +15,17 @@ namespace Library.WinForms
     public partial class UpDateFrm : Form, IUpdateBookView
     {
         private UpdateBookPresenter _updateViewitem;
-        private LibraryFrm libraryFrm;
         public GridViewItem ViewItem { get; set; }
         public UpDateFrm()
         {
             InitializeComponent();
             _updateViewitem = new UpdateBookPresenter(this);
-            libraryFrm = new LibraryFrm();
         }
         public string Author { get; set; }
         public string ID { get; set; }
         public string Name { get; set; }
         public string Publisher { get; set; }
         public int DatePublishing { get; set; }
-
-        public bool AuthorLbl
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
-
-        public bool NameLbl
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
-
-        public bool PublisherLbl
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
-
-        public bool DatePublishingLbl
-        {
-            get { throw new NotImplementedException(); }
-            set { throw new NotImplementedException(); }
-        }
-
 
         private void okButton_Click(object sender, EventArgs e)
         {
@@ -61,11 +34,17 @@ namespace Library.WinForms
             Publisher = publisherTxtBox.Text;
             DatePublishing = int.Parse(datepublishingTxtBox.Text);
             _updateViewitem.UpdateViewItem();
-            
+            Close();
+
         }
 
         private void UpDateFrm_Load(object sender, EventArgs e)
-        { 
+        {
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

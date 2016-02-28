@@ -40,20 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="GridViewItem.cs" />
     <Compile Include="IMainView.cs" />
-=======
-    <Compile Include="IView.cs" />
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Compile Include="IAddBookView.cs" />
     <Compile Include="IAddMagazineView.cs" />
-    <Compile Include="IBookView.cs" />
-    <Compile Include="IMagazineView.cs" />
-<<<<<<< HEAD
+    <Compile Include="IUpdateMagazineView.cs" />
     <Compile Include="IUpdateBookView.cs" />
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

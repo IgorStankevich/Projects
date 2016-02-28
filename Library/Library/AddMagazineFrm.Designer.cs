@@ -29,29 +29,17 @@
         private void InitializeComponent()
         {
             this.label5 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.periodicityTxtBox = new System.Windows.Forms.TextBox();
-=======
-            this.textBox5 = new System.Windows.Forms.TextBox();
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             this.button2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-<<<<<<< HEAD
             this.okButton = new System.Windows.Forms.Button();
             this.datepublishingTxtBox = new System.Windows.Forms.TextBox();
             this.publisherTxtBox = new System.Windows.Forms.TextBox();
             this.nameTxtBox = new System.Windows.Forms.TextBox();
             this.authorTxtBox = new System.Windows.Forms.TextBox();
-=======
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             this.SuspendLayout();
             // 
             // label5
@@ -63,19 +51,12 @@
             this.label5.TabIndex = 33;
             this.label5.Text = "Periodicity";
             // 
-            // textBox5
+            // periodicityTxtBox
             // 
-<<<<<<< HEAD
             this.periodicityTxtBox.Location = new System.Drawing.Point(120, 154);
             this.periodicityTxtBox.Name = "periodicityTxtBox";
             this.periodicityTxtBox.Size = new System.Drawing.Size(100, 20);
             this.periodicityTxtBox.TabIndex = 32;
-=======
-            this.textBox5.Location = new System.Drawing.Point(120, 154);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 32;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             // 
             // button2
             // 
@@ -85,6 +66,7 @@
             this.button2.TabIndex = 31;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -122,7 +104,6 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "Name";
             // 
-<<<<<<< HEAD
             // okButton
             // 
             this.okButton.Location = new System.Drawing.Point(22, 284);
@@ -133,71 +114,33 @@
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
-            // textBox4
+            // datepublishingTxtBox
             // 
             this.datepublishingTxtBox.Location = new System.Drawing.Point(120, 196);
             this.datepublishingTxtBox.Name = "datepublishingTxtBox";
             this.datepublishingTxtBox.Size = new System.Drawing.Size(100, 20);
             this.datepublishingTxtBox.TabIndex = 25;
             // 
-            // textBox3
+            // publisherTxtBox
             // 
             this.publisherTxtBox.Location = new System.Drawing.Point(120, 109);
             this.publisherTxtBox.Name = "publisherTxtBox";
             this.publisherTxtBox.Size = new System.Drawing.Size(100, 20);
             this.publisherTxtBox.TabIndex = 24;
             // 
-            // textBox2
+            // nameTxtBox
             // 
             this.nameTxtBox.Location = new System.Drawing.Point(120, 72);
             this.nameTxtBox.Name = "nameTxtBox";
             this.nameTxtBox.Size = new System.Drawing.Size(100, 20);
             this.nameTxtBox.TabIndex = 23;
             // 
-            // textBox1
+            // authorTxtBox
             // 
             this.authorTxtBox.Location = new System.Drawing.Point(120, 35);
             this.authorTxtBox.Name = "authorTxtBox";
             this.authorTxtBox.Size = new System.Drawing.Size(100, 20);
             this.authorTxtBox.TabIndex = 22;
-=======
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(22, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 32);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(120, 196);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 25;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(120, 109);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(120, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(120, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 22;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             // 
             // AddMagazineFrm
             // 
@@ -205,29 +148,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 349);
             this.Controls.Add(this.label5);
-<<<<<<< HEAD
             this.Controls.Add(this.periodicityTxtBox);
-=======
-            this.Controls.Add(this.textBox5);
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-<<<<<<< HEAD
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.datepublishingTxtBox);
             this.Controls.Add(this.publisherTxtBox);
             this.Controls.Add(this.nameTxtBox);
             this.Controls.Add(this.authorTxtBox);
-=======
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             this.Name = "AddMagazineFrm";
             this.Text = "AddMagazineFrm";
             this.ResumeLayout(false);
@@ -238,28 +169,16 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-<<<<<<< HEAD
         private System.Windows.Forms.TextBox periodicityTxtBox;
-=======
-        private System.Windows.Forms.TextBox textBox5;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-<<<<<<< HEAD
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.TextBox datepublishingTxtBox;
         private System.Windows.Forms.TextBox publisherTxtBox;
         private System.Windows.Forms.TextBox nameTxtBox;
         private System.Windows.Forms.TextBox authorTxtBox;
-=======
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     }
 }

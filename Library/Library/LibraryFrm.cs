@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-<<<<<<< HEAD
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,17 +15,22 @@ using Library.WinForms;
 
 namespace Library
 {
-    public partial class LibraryFrm : Form, IBookView, IMainView
+    public partial class LibraryFrm : Form,IMainView
     {
         public DataTable dataTable { get; set; }
         private MainPresenter _mainPresenter;
         private AddMagazinePresenter _magazinePresenter;
-        public string SearchingValue { get; set; }
+        public string Author { get; set; }
+        public string Name { get; set; }
+        public string Publisher { get; set; }
+        public int DatePublishing { get; set; }
+        public int Periodicity { get; set; }
+        public string ID { get; set; }
+
         public LibraryFrm()
         {
             InitializeComponent();
             _mainPresenter = new MainPresenter(this);
-            //dataTable = new DataTable();
         }
         public List<GridViewItem> ViewItems { get; set; }
         public GridViewItem ViewItem { get; set; }
@@ -38,12 +42,7 @@ namespace Library
             _mainPresenter.ShowPublicationTable();
         }
 
-        private void searchBtn_Click(object sender, EventArgs e)
-        {
-            SearchingValue = searchTxtBox.Text;
-        }
-
-        public void BindData()
+       public void BindData()
         {
             //TO DO GridViewItems List to DataTable          
             if (dataTable == null)
@@ -52,8 +51,8 @@ namespace Library
                 dataTable.Columns.Add("Name", typeof(string));
                 dataTable.Columns.Add("Author", typeof(string));
                 dataTable.Columns.Add("Publisher", typeof(string));
-                dataTable.Columns.Add("Date of Publishing", typeof(int));
-                dataTable.Columns.Add("Periodicity", typeof(int));
+                dataTable.Columns.Add("DatePublishing", typeof(string));
+                dataTable.Columns.Add("Periodicity", typeof(string));
             }
             dataTable.Clear();
             foreach (var item in ViewItems)
@@ -93,6 +92,7 @@ namespace Library
                     updatefrm.ID = ViewItem.ID;
                     updatefrm.ShowDialog();
                     UpdateBook = false;
+                    _mainPresenter.ShowPublicationTable();
                 }
             }
             else
@@ -105,7 +105,9 @@ namespace Library
                     updateMagazine.publisherTxtBox.Text = Convert.ToString(booksGridView.CurrentRow.Cells[2].Value);
                     updateMagazine.datepublishingTxtBox.Text = Convert.ToString(booksGridView.CurrentRow.Cells[3].Value);
                     updateMagazine.periodicityTxtBox.Text = Convert.ToString(booksGridView.CurrentRow.Cells[4].Value);
+                    updateMagazine.ID = ViewItem.ID;
                     updateMagazine.ShowDialog();
+                    _mainPresenter.ShowPublicationTable();
                 }
             }
         }
@@ -126,35 +128,41 @@ namespace Library
         {
             BindingSource bs = new BindingSource();
             bs.DataSource = booksGridView.DataSource;
-            bs.Filter = string.Format(booksGridView.Columns[1].DataPropertyName + " like '%" + searchTxtBox.Text.Replace("'", "''") + "%'" + " or " + booksGridView.Columns[0].DataPropertyName + " like '%" + searchTxtBox.Text.Replace("'", "''") + "%'");
-            //bs.Filter = string.Format(booksGridView.Columns[0].DataPropertyName  + " like '%{0}%'", searchTxtBox.Text.Trim().Replace("'", "''"));
+            var txtBox = searchTxtBox.Text.Replace("'", "''");
+            var authorcolumn = booksGridView.Columns[0].DataPropertyName;
+            var namecolumn = booksGridView.Columns[1].DataPropertyName;
+            var publishercolumn = booksGridView.Columns[2].DataPropertyName;
+            var datePublishingcolumn = booksGridView.Columns[3].DataPropertyName;
+            var periodicitycolumn = booksGridView.Columns[4].DataPropertyName;
+            bs.Filter =
+                string.Format(authorcolumn + " like '%" + txtBox + "%'" + " or " + namecolumn + " like '%" + txtBox +
+                              "%'" + " or " + publishercolumn + " like '%" + txtBox + "%'" + " or " +
+                               periodicitycolumn + " like '%" + txtBox + "%'" + " or " +
+                               datePublishingcolumn + " like '%" + txtBox + "%'");
             booksGridView.DataSource = bs;
-=======
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Library.Views;
-
-namespace Library
-{
-    public partial class LibraryFrm : Form,IBookView
-    {
-        public LibraryFrm()
-        {
-            InitializeComponent();
         }
 
-        private void AddBookBtn_Click(object sender, EventArgs e)
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddBookFrm addbook=new AddBookFrm();
-            addbook.ShowDialog();
-        }
+            ViewItem = GetItem();
+            Author = Convert.ToString(booksGridView.CurrentRow.Cells[0].Value);
+            Name = Convert.ToString(booksGridView.CurrentRow.Cells[1].Value);
+            Publisher = Convert.ToString(booksGridView.CurrentRow.Cells[2].Value);
+            DatePublishing = Convert.ToInt32(booksGridView.CurrentRow.Cells[3].Value);
+            Periodicity = Convert.ToInt32(booksGridView.CurrentRow.Cells[4].Value);
+            ID = ViewItem.ID;
+            DialogResult dialogResult = MessageBox.Show("Do you want delete this item?", "Deleting", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                //do something
+                _mainPresenter.DeleteItem();
+                _mainPresenter.ShowPublicationTable();
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+                //do something else
+            }
 
-        private void AddMagazineBtn_Click(object sender, EventArgs e)
-        {
-            AddMagazineFrm addmagazine=new AddMagazineFrm();
-            addmagazine.ShowDialog();
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
         }
     }
 }

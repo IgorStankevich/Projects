@@ -71,5 +71,23 @@ namespace Library.Presenter
                 }
             }
         }
+
+        public void DeleteItem()
+        {
+            string id = _view.ID;
+            string author = _view.Author;
+            string name = _view.Name;
+            string publisher = _view.Publisher;
+            int datePublishing = _view.DatePublishing;
+            int periodicity = _view.Periodicity;
+           
+            var bookitem = new Book(id, author, name, publisher, datePublishing);
+           _bookModel.GetAllBooks().Find(x => x.ID == bookitem.ID);
+            _bookModel.DeleteBook(bookitem);
+
+            var magazineitem = new Magazine(id, author, name, publisher, datePublishing, periodicity);
+            _magazineModel.GetAllMagazines().Find(x => x.ID == magazineitem.ID);
+            _magazineModel.DeleteMagazine(magazineitem);
+        }
     }
 }

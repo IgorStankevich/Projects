@@ -16,12 +16,6 @@ namespace Library.Validators
             _addMagazineView = addMagazineView;
         }
 
-        //public void CheckOnNull()
-        //{
-        //    if (b)
-        //    {
-                
-        //    }
-        //}
+        
     }
 }

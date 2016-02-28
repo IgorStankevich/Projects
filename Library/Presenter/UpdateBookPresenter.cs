@@ -28,7 +28,7 @@ namespace Library.Presenter
             string name = _updateBookView.Name;
             string publisher = _updateBookView.Publisher;
             int datePublishing = _updateBookView.DatePublishing;
-            var book = new Book(id, author, name, datePublishing, publisher);
+            var book = new Book(id, author, name,publisher, datePublishing );
             _bookModel.UpdateBook(book);
         }
 

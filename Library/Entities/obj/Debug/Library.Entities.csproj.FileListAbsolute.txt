@@ -1,5 +1,5 @@
-D:\Projects\Library\Entities\bin\Debug\Library.Entities.dll
-D:\Projects\Library\Entities\bin\Debug\Library.Entities.pdb
-D:\Projects\Library\Entities\obj\Debug\Library.Entities.csprojResolveAssemblyReference.cache
-D:\Projects\Library\Entities\obj\Debug\Library.Entities.dll
-D:\Projects\Library\Entities\obj\Debug\Library.Entities.pdb
+D:\ADO.NET\DATA\Library\Entities\bin\Debug\Library.Entities.dll
+D:\ADO.NET\DATA\Library\Entities\bin\Debug\Library.Entities.pdb
+D:\ADO.NET\DATA\Library\Entities\obj\Debug\Library.Entities.csprojResolveAssemblyReference.cache
+D:\ADO.NET\DATA\Library\Entities\obj\Debug\Library.Entities.dll
+D:\ADO.NET\DATA\Library\Entities\obj\Debug\Library.Entities.pdb

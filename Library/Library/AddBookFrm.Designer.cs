@@ -41,13 +41,10 @@
             this.authorTxtBox = new System.Windows.Forms.TextBox();
             this.nameTxtBox = new System.Windows.Forms.TextBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-<<<<<<< HEAD
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,6 +56,7 @@
             this.cancelButton.TabIndex = 19;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
+            this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
             // 
             // datepublishingLbl
             // 
@@ -133,12 +131,12 @@
             this.nameTxtBox.Name = "nameTxtBox";
             this.nameTxtBox.Size = new System.Drawing.Size(100, 20);
             this.nameTxtBox.TabIndex = 10;
+            this.nameTxtBox.TextChanged += new System.EventHandler(this.nameTxtBox_TextChanged);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-<<<<<<< HEAD
             // label1
             // 
             this.label1.AutoSize = true;
@@ -175,20 +173,15 @@
             this.label4.TabIndex = 23;
             this.label4.Text = " ";
             // 
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             // AddBookFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(273, 292);
-<<<<<<< HEAD
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.datepublishingLbl);
             this.Controls.Add(this.publisherLbl);
@@ -216,7 +209,6 @@
         private System.Windows.Forms.Label authorLbl;
         private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Button okButton;
-<<<<<<< HEAD
         public System.Windows.Forms.TextBox datepublishingTxtBox;
         public System.Windows.Forms.TextBox publisherTxtBox;
         public System.Windows.Forms.TextBox authorTxtBox;
@@ -226,12 +218,5 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-=======
-        private System.Windows.Forms.TextBox datepublishingTxtBox;
-        private System.Windows.Forms.TextBox publisherTxtBox;
-        private System.Windows.Forms.TextBox authorTxtBox;
-        private System.Windows.Forms.TextBox nameTxtBox;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     }
 }

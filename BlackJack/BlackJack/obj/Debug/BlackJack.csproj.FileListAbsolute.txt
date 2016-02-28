@@ -46,3 +46,4 @@ D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\B
 D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.exe
 D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\bin\Debug\BlackJack.pdb
 D:\ITVDN\BlackJack - копия (1)\BlackJack - копия\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+D:\projects\BlackJack\BlackJack\bin\Debug\BlackJack.exe.config

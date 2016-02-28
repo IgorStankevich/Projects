@@ -9,16 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Library.Views;
 using Library.Presenter;
-<<<<<<< HEAD
 using Library.Validators;
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
 
 namespace Library
 {
     public partial class AddBookFrm : Form, IAddBookView
     {
-<<<<<<< HEAD
         private AddBookPresenter _addBookFrmPresenter;
         private AddBookValidator _addBookValidator;
         
@@ -52,68 +48,27 @@ namespace Library
             DatePublishing = int.Parse(datepublishingTxtBox.Text);
             _addBookFrmPresenter.AddBook();
             Close();
-        }  
+        }
+
+        private void nameTxtBox_TextChanged(object sender, EventArgs e)
+        {
+            if (sender is TextBox)
+            {
+                TextBox textbox = sender as TextBox;
+                if (string.IsNullOrEmpty(textbox.Text))
+                {
+                    MessageBox.Show("Please enter correct value value..");
+                    textbox.Focus();
+
+                }
+
+            }
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 
-=======
-        public AddBookFrm()
-        {
-            InitializeComponent();
-        }
-
-        public void SaveBtn()
-        {
-            string name = nameTxtBox.Text;
-
-        }
-
-        public void CancelBtn()
-        {
-            throw new NotImplementedException();
-        }
-
-        private void okButton_Click(object sender, EventArgs e)
-        {
-            string Author = authorTxtBox.Text;
-            string Name = nameTxtBox.Text;
-            string Publisher = publisherTxtBox.Text;
-
-
-        }
-
-        public string Author
-        {
-            get
-            {
-                return authorTxtBox.Text;
-            }
-            set { authorTxtBox.Text=value; }
-        }
-
-        public string Publisher
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public int DatePublishing
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-    }
-}
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f

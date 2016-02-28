@@ -7,17 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-<<<<<<< HEAD
 using Library.Presenter;
-=======
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
 using Library.Views;
 
 namespace Library
 {
     public partial class AddMagazineFrm : Form, IAddMagazineView
     {
-<<<<<<< HEAD
         private AddMagazinePresenter _addMagazinePresenter;
         public AddMagazineFrm()
         {
@@ -41,23 +37,11 @@ namespace Library
             Close();
         }
 
-
-=======
-        public AddMagazineFrm()
+        private void button2_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+            Close();
         }
 
 
-        public void SaveBtn()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CancelBtn()
-        {
-            throw new NotImplementedException();
-        }
->>>>>>> a59f243ab85b2dc03956a58b86d7af7f439e719f
     }
 }
