@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Blog.ViewModels.About.AboutViewModel
+
+
+<div style="height: 500px;">
+    @foreach (var name in Model.Posts )
+        {
+
+            <li><a href="#">@name.Title</a></li>
+            @*<div>@name.Author</div>
+            <div>@name.DateCreated</div>*@
+    }
+
+</div>
+
+
+
+
+
+

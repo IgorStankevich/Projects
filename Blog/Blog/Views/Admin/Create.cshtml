@@ -1,0 +1,64 @@
+﻿@model Blog.Entities.Post
+
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+        <h4>Post</h4>
+        <hr />
+
+    <div class="form-group">
+       @* @Html.HiddenFor(model=>model.Id,new{id =  Model.Id})*@
+       </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+               </div>
+        </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Author, htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.Author, new {htmlAttributes = new {@class = "form-control"}})
+           </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.ShortContent, htmlAttributes: new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.TextAreaFor(model =>model.ShortContent, new {htmlAttributes = new {@class = "form-control", @rows = 3}})
+            </div>
+    </div>
+<div class="form-group">
+            @Html.LabelFor(model => model.Content, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Content, new { htmlAttributes = new { @class = "form-control",@rows=5  } })
+               </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+@*<input type="hidden" value="@Model.Id" name="Id" />
+<input type="text" name="TiTle" value="@Model.Title" placeholder="Title" class="form-control" />
+<input type="text" name="Author" value="@Model.Author" placeholder="Author" class="form-control" />
+<textarea cols="3" type="text" name="ShortContent" value="@Model.ShortContent" placeholder="ShortContent" class="form-control"></textarea>
+<textarea cols="3" type="text" name="Content" value="@Model.Content" placeholder="Content" class="form-control"></textarea>
+<input type="submit" value="Create" class="btn btn-default"/>*@
+
+}
+<div>
+    <a href="@Url.Action("Index", "Admin")">Back to List </a> 
+</div>
+

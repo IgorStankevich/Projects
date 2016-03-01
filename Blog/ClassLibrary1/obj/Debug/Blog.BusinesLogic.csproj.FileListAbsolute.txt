@@ -1,0 +1,7 @@
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\obj\Debug\Blog.BusinesLogic.csprojResolveAssemblyReference.cache
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\bin\Debug\Blog.Entities.dll
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\bin\Debug\Blog.Entities.pdb
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\stankevich\Desktop\Blog\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

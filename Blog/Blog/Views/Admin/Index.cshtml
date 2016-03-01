@@ -1,0 +1,34 @@
+﻿
+@{
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Blog.ViewModels.Admin.IndexAdminViewModel
+@*@model Blog.ViewModels.Admin.EditPostViewModel*@
+<div> <button type="button"  class="btn btn-primary navbar-btn" style="text-decoration: none; font-size: 1.2em;"class="btn-link" href="@Url.Action("Create", "Admin"@*, new {id = @name.Id}*@)">Create</button></div>
+<div>
+    @foreach (var name in Model.Posts)
+    {
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+
+                <!--Heading-->
+                <div class="blog-post-title col-md-12">
+                    <h2 class="blog-post-title"> @name.Title</h2>
+                </div>
+            </div>
+            <div class="row col-md-12">
+                <!--Posted date-->
+                <p class="blog-post-meta"> @name.DateCreated.Date.Day/@name.DateCreated.Month/@name.DateCreated.Year <a href="#">@name.Author</a>
+                </p>
+            </div>
+            @Html.Raw(@name.ShortContent)
+        </div>
+ <div class="post-foot col-md-12">
+     <a style="text-decoration: none; font-size: 1.2em;" href="@Url.Action("GetBlogPost", "Admin", new {id = @name.Id})">Details</a>
+</div>
+     }
+
+</div>
+

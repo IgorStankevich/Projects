@@ -1,0 +1,64 @@
+﻿@{
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Blog.ViewModels.Admin.EditPostViewModel
+
+<h2>Edit</h2>
+@Html.BeginForm()
+{
+  @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <h3>Post</h3>
+    <hr />
+    @Html.ValidationSummary()
+    @Html.HiddenFor(model=>model.Post.Id)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Post.Title, new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Post.Title)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Post.Author, new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Post.Author)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Post.ShortContent, new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Post.ShortContent)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Post.Content, new {@class = "control-label col-md-2"})
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Post.Content)
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" onclick='overlay()'  />
+            
+        </div>
+    </div>
+</div>
+}
+@*<form action="/Admin/Edit" method="POST">
+
+    <div class="form-group">
+        <label for="Title">Title</label>
+        <input type="text" class="form-control" value="@Model.Title" />
+    </div>
+    <div class="form-group">
+        <label for="Author">Author</label>
+        <input type="text" class="form-control" value="@Model.Author" />
+    </div>
+    <div class="form-group">
+        <label for="Content">Content</label>
+        <input type="text" class="form-control" value="@Model.Content" />
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+*@

@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Post Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Blog.ViewModels.Admin.GetBlogPostViewModel
+
+
+    <div class="post-meta">
+ 
+      <!--Heading-->
+
+        <div class="col-sm-8 blog-main">
+            <div class="blog-post">
+
+                <!--Heading-->
+                <div class="post-title col-md-12">
+                    <h2 class="blog-post-title"> @Model.BlogPost.Title</h2>
+                </div>
+            </div>
+            <div class="row col-md-12">
+
+                <!--Posted date-->
+
+                <p class="blog-post-meta"> @Model.BlogPost.DateCreated.Date <a href="#">@Model.BlogPost.Author</a>
+                </p>
+
+            </div>
+            @Html.Raw(Model.BlogPost.Content)
+
+        </div>
+
+<div class="post-foot col-md-12">
+    <p><a style="text-decoration: none; font-size: 1.2em;"  href="@Url.Action("EditPost", "Admin", new {id = @Model.BlogPost.Id})">Edit</a></p>
+   <p><a style="text-decoration: none; font-size: 1.2em;"  href="@Url.Action("DeletePost", "Admin", new {id = @Model.BlogPost.Id})">Delete</a></p>
+
+
+</div>
+
+</div>
+
+

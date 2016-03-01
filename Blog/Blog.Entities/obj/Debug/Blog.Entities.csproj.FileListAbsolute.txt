@@ -1,0 +1,10 @@
+D:\projects\Blog\Blog.Entities\bin\Debug\Blog.Entities.dll
+D:\projects\Blog\Blog.Entities\bin\Debug\Blog.Entities.pdb
+D:\projects\Blog\Blog.Entities\obj\Debug\Blog.Entities.csprojResolveAssemblyReference.cache
+D:\projects\Blog\Blog.Entities\obj\Debug\Blog.Entities.dll
+D:\projects\Blog\Blog.Entities\obj\Debug\Blog.Entities.pdb
+C:\Users\stankevich\Desktop\Blog\Blog.Entities\bin\Debug\Blog.Entities.dll
+C:\Users\stankevich\Desktop\Blog\Blog.Entities\bin\Debug\Blog.Entities.pdb
+C:\Users\stankevich\Desktop\Blog\Blog.Entities\obj\Debug\Blog.Entities.dll
+C:\Users\stankevich\Desktop\Blog\Blog.Entities\obj\Debug\Blog.Entities.pdb
+C:\Users\stankevich\Desktop\Blog\Blog.Entities\obj\Debug\Blog.Entities.csprojResolveAssemblyReference.cache

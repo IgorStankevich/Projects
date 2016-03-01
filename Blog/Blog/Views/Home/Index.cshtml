@@ -1,0 +1,50 @@
+﻿@model Blog.ViewModels.Home.IndexHomeViewModel
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";;
+}
+<link href="~/Content/css/font-awesome.css" rel="stylesheet"/>
+
+<div>
+    @foreach (var modelitem in Model.Posts)
+    {
+
+       <div class="col-md-12 blog-main">
+     
+            <!--Heading-->
+           <div class="post-title col-md-12 blog-post">
+               <h2 class="blog-post-title"> @modelitem.Title</h2>
+           </div>
+
+        <div class="row col-md-12">
+
+            <!--Posted date-->
+           
+               <p class="blog-post-meta"> @modelitem.DateCreated.Date.Day/@modelitem.DateCreated.Month/@modelitem.DateCreated.Year<span ></span> <i class="fa fa-user"></i><a href="#" >@modelitem.Author</a></p>
+            
+        </div>
+
+
+         <div class="col-md-12">
+            @Html.Raw(@modelitem.ShortContent)
+        </div>
+        </div>
+
+        <div class="post-foot col-md-12">
+            <a class="pull-right" style="text-decoration: none; font-size: 1.2em;"  href="@Url.Action("FullPost", "Home", new {id = modelitem.Id})"> Read more...</a>
+            @*
+            </div>
+        </div>
+        *@
+        </div>
+    }
+
+</div>
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+ declare @id as uniqueidentifier
+set @id= NEWID()
+ INSERT Users(Id,[Date]  ,Email ,UserName ,LastName, [Password] )Values(@id,'20160212' ,'example@gmail.com','Admin','Admin', '12345' )
+ 
+
+  
+  
+  
+
+  INSERT Comments(Id, Content,DateCreated,Post_Id,User_Id)Values(@id, 'Cool','20160212', @id, @id )
+ 
+
+ 
+ 
+
+ INSERT Posts(Id, Author,Title,ShortContent,Content,DateCreated,Modified,User_Id) VALUES (@id, 'Scott Guthrie', 'Introducing ASP.NET 5', 'The first preview release of ASP.NET 1.0 came out almost 15 years ago.  Since then millions of developers have used it to build and run great web applications, and over the years we have added and evolved many, many capabilities to it.Im excited today to post about a new release of ASP.NET that we are working on that we are calling ASP.NET 5.  This new release is one of the most significant architectural updates we ve done to ASP.NET.  As part of this release we are making ASP.NET leaner, more modular, cross-platform, and cloud optimized.  The ASP.NET 5 preview is now available as a preview release, and you can start using it today by downloading the latest CTP of Visual Studio 2015 which we just made available.
+
+ASP.NET 5 is an open source web framework for building modern web applications that can be developed and run on Windows, Linux and the Mac. It includes the MVC 6 framework, which now combines the features of MVC and Web API into a single web programming framework. ', 'The first preview release of ASP.NET 1.0 came out almost 15 years ago.  Since then millions of developers have used it to build and run great web applications, and over the years we have added and evolved many, many capabilities to it. Im excited today to post about a new release of ASP.NET that we are working on that we are calling ASP.NET 5.  This new release is one of the most significant architectural updates we ve done to ASP.NET.  As part of this release we are making ASP.NET leaner, more modular, cross-platform, and cloud optimized.  The ASP.NET 5 preview is now available as a preview release, and you can start using it today by downloading the latest CTP of Visual Studio 2015 which we just made available.ASP.NET 5 is an open source web framework for building modern web applications that can be developed and run on Windows, Linux and the Mac. It includes the MVC 6 framework, which now combines the features of MVC and Web API into a single web programming framework.  ASP.NET 5 will also be the basis for SignalR 3 - enabling you to add real time functionality to cloud connected applications. ASP.NET 5 is built on the .NET Core runtime, but it can also be run on the full .NET Framework for maximum compatibility.With ASP.NET 5 we are making a number of architectural changes that makes the core web framework much leaner (it no longer requires System.Web.dll) and more modular (almost all features are now implemented as NuGet modules - allowing you to optimize your app to have just what you need).  With ASP.NET 5 you gain the following foundational improvements:Build and run cross-platform ASP.NET apps on Windows, Mac and Linux Built on .NET Core, which supports true side-by-side app versioning New tooling that simplifies modern Web development Single aligned web stack for Web UI and Web APIs Cloud-ready environment-based configuration Integrated support for creating and using NuGet packages Built-in support for dependency injection Ability to host on IIS or self-host in your own process The end result is an ASP.NET that you ll feel very familiar with, and which is also now even more tuned for modern web development. ','20160212','20160212',@id ) 

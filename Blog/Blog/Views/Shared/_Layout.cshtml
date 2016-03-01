@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+      <title>Blog Template for Bootstrap</title>
+<link href="~/Content/bootstrap.css" rel="stylesheet" />
+    
+      <link href="~/Content/blog.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+      <link href="~/Content/css/font-awesome.css" rel="stylesheet"/>
+      <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Bootstrap core CSS -->
+   
+  </head>
+
+  <body>
+
+    <div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item " href="@Url.Action("Index","Home")">Home</a>
+          <a class="blog-nav-item" href="@Url.Action("About","Home")">About</a>
+          <a class="blog-nav-item" href="@Url.Action("Index","Admin")">Admin</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">My simple MVC Blog</h1>
+        <p class="lead blog-description">The official example of creating a blog with ASP.NET MVC 5 and Bootstrap.</p>
+      </div>
+
+      <div class="row">
+         @RenderBody()
+        <div class="col-sm-8 blog-main">
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   
+  </body>
+</html>
